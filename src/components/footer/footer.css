@@ -1,0 +1,45 @@
+.footer-container{
+ position: relative;
+}
+
+.footer-container hr{
+ border: 1px solid var(--lightgray);
+ position: relative;
+}
+
+.footer{
+ padding: 1rem 2rem;
+ display: flex;
+ flex-direction: column;
+ gap: 4rem;
+ align-items: center;
+ justify-content: center;
+ height: 20rem;
+}
+.blur{
+  background: rgba(253, 120,43, 0.69) ;
+  border-radius:50% ;
+  filter: blur(212px);
+  z-index: -8;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  height: 400px;
+  width: 200px;
+ }
+.social-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.social-links img{
+ width: 2rem;
+ height: 2rem;
+ cursor: pointer;
+}
+.logo-f img{
+ width: 15rem;
+}
+
+
+

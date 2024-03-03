@@ -1,0 +1,82 @@
+.Programs{
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ padding: 0 2rem;
+}
+
+.program_header{
+ display: flex;
+ flex-direction: row;
+ gap: 5rem;
+ font-weight: bold;
+ font-size: 3rem;
+ justify-content: center;
+ color: white;
+ text-transform: uppercase;
+ font-style: italic;
+}
+
+.program-catagory{
+ display: flex;
+ gap: 1rem;
+}
+
+.catogary{
+ display: flex;
+ flex-direction: column;
+ background-color: grey;
+ padding: 2rem;
+ gap: 1rem;
+ color: white;
+ justify-content: space-between;
+}
+
+.catogary :nth-child(1){
+ width: 2rem;
+ height: 2rem;
+ fill: white;
+}
+
+.catogary :nth-child(2){
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+.catogary :nth-child(3){
+ font-size: 0.9rem;
+ font-weight: 25px;
+}
+
+.join-now{
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+}
+
+.join-now .uniq img{
+ width: 2rem;
+}
+
+.catogary:hover{
+ background-color: var(--orange);
+ cursor: pointer;
+}
+
+@media  screen and (max-width: 768px){
+ .program_header{
+  flex-direction: column;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+ }
+
+ .program-catagory{
+  flex-direction: column;
+ }
+}
+

@@ -1,0 +1,104 @@
+
+
+.plans-header{
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ padding: 0 7rem;
+ font-size: 3rem;
+ font-style: italic;
+ font-weight: 900;
+ align-items: center;
+ color: aliceblue;
+}
+
+.plans-container{
+ margin-top: -4rem;
+ padding: 0 2rem;
+ display: flex;
+ flex-direction: column;
+ gap: 4rem;
+ position: relative;
+}
+
+.blur{
+ background: rgba(253, 120,43, 0.69) ;
+ border-radius:50% ;
+ filter: blur(212px);
+ z-index: -8;
+ position: absolute;
+ left: 100px;
+ top: 100px;
+ height: 300px;
+ width: 500px;
+}
+
+.plans{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 3rem;
+}
+
+.plan{
+ display: flex;
+ flex-direction: column;
+ background-color: var(--caloryCard);
+ color: white;
+ gap: 2rem;
+ padding: 1.5rem;
+ width: 15rem;
+}
+
+.plan:nth-child(2){
+ background: var(--planCard);
+ transform: scale(1.1);
+}
+
+.plan>svg{
+ fill: var(--orange);
+}
+
+.plan:nth-child(2){
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+.plan .price{
+ font-size: 3rem;
+ font-weight: bold;
+}
+
+.plan:nth-child(5){
+ font-size: 0.8rem;
+}
+
+.feacture{
+ display: flex;
+ gap: 1rem;
+ flex-direction: column;
+}
+
+.feature{
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+}
+
+.feature img{
+ width: 1rem;
+}
+
+@media screen and (max-width:768px) {
+ .plans-header{
+  flex-direction: column;
+  font-size: 40px;
+  text-align: center;
+ }
+ 
+ .plans{
+  flex-direction: column;
+ }
+
+
+}
